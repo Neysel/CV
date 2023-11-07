@@ -1,3 +1,3 @@
-# rsschool-cv
-https://Neysel.github.io/rsschool-cv/
+# CV
+https://Neysel.github.io/CV/
 
