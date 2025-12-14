@@ -323,7 +323,7 @@ code {
 
 #code_example {
     margin-top: 50px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 
 #code_example pre {
