@@ -8,7 +8,7 @@ themeButton.addEventListener('click', function() {
         document.documentElement.style.setProperty('--text', 'white')
         document.documentElement.style.setProperty('--pink', '#ee2db4')
      code_example_wrapper.style.backgroundColor = '#2d2d3a'
-        themeButton.style.backgroundImage = 'url(../rsschool-cv/assets/icons/light_mode.png)'
+        themeButton.style.backgroundImage = 'url(./assets/icons/light_mode.png)'
         themeButton.style.filter = 'invert(100%)'
 
         currentTheme = 'dark-theme';
@@ -17,7 +17,7 @@ themeButton.addEventListener('click', function() {
         document.documentElement.style.setProperty('--text', 'black')
         document.documentElement.style.setProperty('--pink', '#5c0042')
         code_example_wrapper.style.backgroundColor = 'white'
-        themeButton.style.backgroundImage = 'url(../rsschool-cv/assets/icons/night_mode.png)'
+        themeButton.style.backgroundImage = 'url(./assets/icons/night_mode.png)'
         themeButton.style.filter = 'invert(0%)'
 
         currentTheme = 'light-theme';
