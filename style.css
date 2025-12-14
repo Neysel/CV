@@ -112,7 +112,7 @@ h1 {
  }
  
  section#profile {
- height: 380px
+ height: 280px
  }
 
 section#profile h2 {
@@ -125,7 +125,7 @@ section#profile h2 {
 }
 
 #profile ul li {
-  /* margin-bottom: 5px; */
+  margin-bottom: 5px;
   
 }
 
@@ -145,7 +145,7 @@ section h2::after{
 }
 
 section#summary  {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   margin-left: 0px;
   width: 45vw;
 }
@@ -161,7 +161,7 @@ section.introWrapper {
 section#skills ul {
   padding-left: 0;
     display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   align-items: center;
   /* justify-content: center; */
@@ -176,7 +176,7 @@ section#skills ul li {
   /* top: 50%; */
   list-style: none;
   padding-left: 48px;
-  height: 50px;
+  height: 35px;
   background-size: 40px;
   background-position: 5px;
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .projectGallery img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.2s All;
   cursor: pointer;
   overflow: hidden;
