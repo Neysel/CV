@@ -32,6 +32,7 @@ body {
     margin: 0 50px;
   } 
 
+
   .nav-list {
     
     display: flex;
@@ -53,7 +54,15 @@ body {
       }
 header .nav-item{
   font-size: 25px;
+
 }
+
+header .nav-item a {
+  display: flex;
+  text-align: center;
+}
+
+
 html {
   scroll-behavior: smooth; 
 }
@@ -65,13 +74,14 @@ html {
   height: 40px;
   width: 40px;
   background-color: transparent;
-  background-image: url(../rsschool-cv/assets/icons/light_mode.png);
+  background-image: url(./assets/icons/light_mode.png);
   filter: invert(100%);
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   right: 7vw;
   top: 20px;
+  z-index: 1000;
 }
 
   
@@ -311,6 +321,104 @@ code {
   justify-content: center;
 }
 
+#code_example {
+    margin-top: 50px;
+    overflow: hidden; 
+}
+
+#code_example pre {
+    position: relative;
+    background-color: #2d2d3a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0 15px;
+    overflow-x: auto; 
+    border: 1px solid #3d3d4d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', Consolas, Monaco, 'Andale Mono', monospace;
+    /* font-size: 24px; */
+    line-height: 1.5;
+    max-width: 100%; 
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap; 
+    /* margin-right: 50px; */
+}
+
+
+#code_example code {
+    display: block;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    font-size: 18px ;
+}
+
+
+#code_example code .string,
+#code_example code .variable,
+#code_example code .builtin {
+    word-break: break-all; 
+}
+
+
+
+
+#code_example pre code {
+    max-width: 100%;
+    padding: 0 40px 0 30px;
+    /* margin-right: 50px; */
+}
+
+
+#code_example pre::-webkit-scrollbar {
+    height: 6px;
+}
+
+#code_example pre::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+#code_example pre::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border-radius: 3px;
+}
+
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.copy-btn {
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: background-color 0.3s;
+    white-space: nowrap; 
+}
+
+.code-lang {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
 
 /* Средние экраны */
 @media all and (max-width: 800px) {
@@ -324,6 +432,37 @@ code {
   .section {
     width: 100%;
   }
+
+     #code_example pre {
+        padding: 15px;
+        font-size: 14px;
+        margin: 10px -10px;
+        border-radius: 6px;
+        width: calc(100% + 20px); 
+        max-width: none;
+    }
+    
+   
+    #code_example code {
+        font-size: 13px;
+        word-break: break-all; 
+        white-space: pre-wrap;
+    }
+    
+    .copy-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .code-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .code-header h2 {
+        margin-bottom: 5px;
+    }
 }
 
 /* Маленькие экраны */
@@ -333,6 +472,44 @@ code {
     flex-direction: column;
   }
 }
+
+    @media (max-width: 360px) {
+        
+    #code_example pre {
+        font-size: 12px;
+        padding: 12px;
+        margin-right: 15px;
+        /* margin: 10px -15px; */
+        width: calc(100% + 30px);
+        border-radius: 4px;
+        margin-right: 35px;
+        width: auto;
+    }
+    
+          #code_example code {
+              font-size: 11px;
+              line-height: 1.4;
+          }
+    
+            #code_example h2 {
+                font-size: 22px;
+            }
+    
+          .copy-btn {
+              font-size: 11px;
+              padding: 4px 8px;
+              align-self: flex-start;
+          }
+
+        #code_example {
+            width: 100%;
+            box-sizing: border-box;
+        }
+      body {
+          overflow-x: hidden;
+          width: 100%;
+      }
+    }
 
 
 /* Анимации */
@@ -381,6 +558,10 @@ main > section {
     animation-delay: 0.7s;
 }
 
+.code_example {
+  
+}
+
 /* для айтемов */
 .projectGallery > div {
     animation: slideInFromLeft 0.6s ease-out both;
@@ -401,8 +582,16 @@ main > section {
 
 
 .header {
-    animation: slideInFromLeft 0.5s ease-out;
+    /* animation: slideInFromLeft 0.1s ease-out; */
 }
+
+
+  
+
+
+
+
+
 
 
 footer {
