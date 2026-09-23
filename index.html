@@ -11,15 +11,17 @@
 <body class="page">
     <header class="header">
         <div class="container_header">
-            <div class="changeTheme">
+            <div class="headerControls">
+                <div class="changeTheme" title="Theme"></div>
+                <button class="changeLang" type="button" aria-label="Switch language">RU</button>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
                   <!-- <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li> -->
                   <!-- <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li> -->
-                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                  <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                  <li class="nav-item"><a href="#Courses" class="nav-link">Sertificates</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                  <li class="nav-item"><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                  <li class="nav-item"><a href="#Courses" class="nav-link" data-i18n="nav.certificates">Sertificates</a></li>
                   <!-- <li class="nav-item"><a href="#education" class="nav-link">Education</a></li> -->
                 </ul>
             </nav>
@@ -28,7 +30,7 @@
     <main class="container">
         <section class="introWrapper">
         <section id="profile">
-            <p class="my_photo"><img class="my_photo" src="assets/img/img.png" alt="my photo"></p>
+            <p class="my_photo"><img class="my_photo" src="assets/img/img.png" alt="my photo" data-i18n-alt="profile.photoAlt"></p>
             <p class="pink">Leyla Ladygina</p>
             <!-- <p class="pink"> Contacts </p> -->
             <ul>
@@ -38,17 +40,17 @@
             </ul>
         </section>
         <section id="summary">
-            <h1>Front-end developer</h1>
+            <h1 data-i18n="summary.title">Front-end developer</h1>
 
-                <h2 class="pink"> Summary </h2>
-                    <p> I love working in the field of technology and development </p>
-                    <p> I'm a purposeful developer with a background in technical support and workflow automation </p>
-                     <p> And I'm a purposeful learner, motivated to apply my technical skills and drive for improvement to solve real-world problems through code.</p>
+                <h2 class="pink" data-i18n="summary.heading"> Summary </h2>
+                    <p data-i18n="summary.p1"> I love working in the field of technology and development </p>
+                    <p data-i18n="summary.p2"> I'm a purposeful developer with a background in technical support and workflow automation </p>
+                     <p data-i18n="summary.p3"> And I'm a purposeful learner, motivated to apply my technical skills and drive for improvement to solve real-world problems through code.</p>
             </section>
         </section>
         
         <section id="skills">
-                <h2 class="pink"> Skills </h2>
+                <h2 class="pink" data-i18n="skills.heading"> Skills </h2>
                     <ul>
                          <li style="background-image: url(assets/icons/icons8-react-48.png);">React
                         </li>
@@ -58,7 +60,7 @@
                         </li>
                     </ul>
                     <ul>
-                        <li style="background-image: url(assets/icons/icons8-html.svg);">HTML (Semantic, Accessibility)
+                        <li style="background-image: url(assets/icons/icons8-html.svg);" data-i18n="skills.html">HTML (Semantic, Accessibility)
                         </li>
                         <li style="background-image: url(assets/icons/icons8-css3.svg); ">CSS (Bootstrap, BEM)</li>
                         <li style="background-image: url(assets/icons/icons8-typescript-48.png); ">JavaScript/TypeScript</li>
@@ -70,17 +72,17 @@
                         <li style="background-image: url(assets/icons/icons8-php-48.png);">PHP</li>
                         <li style="background-image: url(assets/icons/icons8-github.svg);">Git</li>
                         <li style="background-image: url(assets/icons/icons8-vue-js.svg); ">Vue</li>
-                        <li style="background-image: url(assets/icons/icons8-gulp.svg); background-size: 15%;">Module Bundlers: Gulp, Webpack</li>
+                        <li style="background-image: url(assets/icons/icons8-gulp.svg); background-size: 15%;" data-i18n="skills.bundlers">Module Bundlers: Gulp, Webpack</li>
                        
                     </ul>
 
                       <ul>   
                         <li style="background-image: url(assets/icons/icons8-sql-64.png); background-size: 55%;">SQL</li>
-                        <li style="background-image: url(assets/icons/icons8-english-48.png); background-size: 25%;">English - C1</li>
+                        <li style="background-image: url(assets/icons/icons8-english-48.png); background-size: 25%;" data-i18n="skills.english">English - C1</li>
                         </ul>
         </section>
         <section id="projects">
-            <h2 class="pink"> Projects </h2>
+            <h2 class="pink" data-i18n="projects.heading"> Projects </h2>
 
             <div class="projectGallery">
 
@@ -91,57 +93,57 @@
             </div>
 
             <div>
-                <div class="text">Coffee house</div>
+                <div class="text" data-i18n="projects.coffee">Coffee house</div>
                 <a href="https://neysel.github.io/Portfolio/coffee-house/" target="_blank">
-                <img src="assets/img/coffee_house.png" style="background-size: cover" alt="Coffee house"></a>
+                <img src="assets/img/coffee_house.png" style="background-size: cover" alt="Coffee house" data-i18n-alt="projects.coffee"></a>
                 
             </div>
 
             <div>
-                <div class="text">Hangman game</div>
+                <div class="text" data-i18n="projects.hangman">Hangman game</div>
                 <a href="https://neysel.github.io/Portfolio/Hangman/" target="_blank">
-                <img src="assets/img/hangman.png" style="background-size: cover" alt="Hangman game"></a>
+                <img src="assets/img/hangman.png" style="background-size: cover" alt="Hangman game" data-i18n-alt="projects.hangman"></a>
                 
             </div>
 
             <div>
-                <div class="text">Users data - custom router</div>
+                <div class="text" data-i18n="projects.router">Users data - custom router</div>
                 <a href="https://reacrroutertest.netlify.app/" target="_blank">
-                <img src="assets/img/react_router_test.png" style="background-size: cover" alt="React router test"></a>
+                <img src="assets/img/react_router_test.png" style="background-size: cover" alt="React router test" data-i18n-alt="projects.router"></a>
             </div>
 
             <div>
-                <div class="text">Calculator</div>
+                <div class="text" data-i18n="projects.calculator">Calculator</div>
                 <a href="https://codepen.io/Leyla-the-lessful/pen/ogbBgGZ" target="_blank">
-                <img src="assets/img/calculator.png" style="background-size: cover" alt="Calculator"></a>
+                <img src="assets/img/calculator.png" style="background-size: cover" alt="Calculator" data-i18n-alt="projects.calculator"></a>
             </div>
 
 
             <div>
-                <div class="text">Library site</div>
+                <div class="text" data-i18n="projects.library">Library site</div>
                 <a href="https://neysel.github.io/Library/" target="_blank">
-                <img src="assets/img/library.png" style="background-size: cover" alt="library"></a>
+                <img src="assets/img/library.png" style="background-size: cover" alt="library" data-i18n-alt="projects.library"></a>
                 
             </div>
             <div>
-                <div class="text">Audioplayer</div>
+                <div class="text" data-i18n="projects.audio">Audioplayer</div>
                 <a href="https://neysel.github.io/Portfolio/audioplayer/" target="_blank">
-                <img src="assets/img/audioplayer.png" alt="audioplayer"></a>
+                <img src="assets/img/audioplayer.png" alt="audioplayer" data-i18n-alt="projects.audio"></a>
             </div>
             <div>
-                <div class="text">Videoplayer</div>
+                <div class="text" data-i18n="projects.video">Videoplayer</div>
                 <a href="https://neysel.github.io/Portfolio/videoplayer/" target="_blank">
-                <img src="assets/img/videoplayer.png" alt="videoplayer"></a>
+                <img src="assets/img/videoplayer.png" alt="videoplayer" data-i18n-alt="projects.video"></a>
             </div>
             <div>
-                <div class="text">Image gallery</div>
+                <div class="text" data-i18n="projects.gallery">Image gallery</div>
                 <a href="https://neysel.github.io/Portfolio/imageGallery/" target="_blank">
-                <img src="assets/img/unsplashApi.png" alt="unsplashApi"></a>
+                <img src="assets/img/unsplashApi.png" alt="unsplashApi" data-i18n-alt="projects.gallery"></a>
             </div>
             <div>
-                <div class="text">Simple 2d game</div>
+                <div class="text" data-i18n="projects.game">Simple 2d game</div>
                 <a href="https://neysel.github.io/Portfolio/2D_Platformer/" target="_blank">
-                <img src="assets/img/simpleGame.png" alt="simpleGame"></a>
+                <img src="assets/img/simpleGame.png" alt="simpleGame" data-i18n-alt="projects.game"></a>
             </div>
             <!-- <div> -->
                 <!-- <div class="text">Sell car site</div> -->
@@ -153,54 +155,54 @@
             <!-- <a href="https://neysel.github.io/folder/">Site example</a> -->
         </section>
         <section id="experience">
-            <h2 class="pink"> Experience </h2>
+            <h2 class="pink" data-i18n="experience.heading"> Experience </h2>
 
            <p>
-               <strong>Frontend Programmer in FlyUnicorn company - 2024-2026 </strong> <br>
-                Responsibilities:<br>
-           -  I developed new functionality for CRM systems and websites created using JavaScript, React, and PHP, and also worked with WordPress, Webasyst, Tilda, and other website creation platforms.
-                - Have experience with React, TypeScript, Redux, HTML, CSS, Wordpress to create user-friendly interfaces that gather more information about customers purchases and improve the overall user experience. <br>
-                - Collaborated with cross-functional teams, including designers, backend developers, and product managers, to deliver high-quality software solutions.<br> 
-Wrked with databases using SQL to fulfill client requests for changes and downloading necessary data.
+               <strong data-i18n="experience.job1.title">Frontend Programmer in FlyUnicorn company - 2024-2026 </strong> <br>
+                <span data-i18n="experience.responsibilities">Responsibilities:</span><br>
+           <span data-i18n="experience.job1.r1">-  I developed new functionality for CRM systems and websites created using JavaScript, React, and PHP, and also worked with WordPress, Webasyst, Tilda, and other website creation platforms.</span>
+                <span data-i18n="experience.job1.r2">- Have experience with React, TypeScript, Redux, HTML, CSS, Wordpress to create user-friendly interfaces that gather more information about customers purchases and improve the overall user experience.</span> <br>
+                <span data-i18n="experience.job1.r3">- Collaborated with cross-functional teams, including designers, backend developers, and product managers, to deliver high-quality software solutions.</span><br> 
+<span data-i18n="experience.job1.r4">Wrked with databases using SQL to fulfill client requests for changes and downloading necessary data.</span>
             </p>
             <p>
-               <strong>Integration Analyst in FlyUnicorn company - 2023-2024 </strong> <br>
-                 Responsibilities:<br>
-               - I configured various integrations between CRM systems and other services using APIs, webhooks, and applications, and provided comprehensive support to the company's clients. The company creates various integrations for banks, financial institutions, construction companies, and legal services companies, providing full support for various integrations and websites.<br>
-- I conducted a comprehensive analysis of the company's processes to improve the quality of services provided and identify growth opportunities. This work was carried out in CRM systems such as Bitrix, Kommo, Zendesk and other CRM systems.
+               <strong data-i18n="experience.job2.title">Integration Analyst in FlyUnicorn company - 2023-2024 </strong> <br>
+                 <span data-i18n="experience.responsibilities">Responsibilities:</span><br>
+               <span data-i18n="experience.job2.r1">- I configured various integrations between CRM systems and other services using APIs, webhooks, and applications, and provided comprehensive support to the company's clients. The company creates various integrations for banks, financial institutions, construction companies, and legal services companies, providing full support for various integrations and websites.</span><br>
+<span data-i18n="experience.job2.r2">- I conducted a comprehensive analysis of the company's processes to improve the quality of services provided and identify growth opportunities. This work was carried out in CRM systems such as Bitrix, Kommo, Zendesk and other CRM systems.</span>
             </p>
 
                 <p>
-                    <strong>Technical coordinator at CRM Integrators company - 2023-2023 </strong> <br>
-                    Responsibilities:<br>
-                    - I configured workflows and CRM systems, created tasks
-                    for programmers, and performed manual testing of new features.<br>
-                    - I provided comprehensive support to the company regarding the fulfillment
-                    of their orders and also collected requirements and suggestions for the final product.
+                    <strong data-i18n="experience.job3.title">Technical coordinator at CRM Integrators company - 2023-2023 </strong> <br>
+                    <span data-i18n="experience.responsibilities">Responsibilities:</span><br>
+                    <span data-i18n="experience.job3.r1">- I configured workflows and CRM systems, created tasks
+                    for programmers, and performed manual testing of new features.</span><br>
+                    <span data-i18n="experience.job3.r2">- I provided comprehensive support to the company regarding the fulfillment
+                    of their orders and also collected requirements and suggestions for the final product.</span>
                 </p>
 
             <p>
-                <strong>Technical Support Engineer at ChatApp company - 2021-2022 </strong>  <br> 
-                    Responsibilities:<br>
-                    - I provided comprehensive support for services and applications
+                <strong data-i18n="experience.job4.title">Technical Support Engineer at ChatApp company - 2021-2022 </strong>  <br> 
+                    <span data-i18n="experience.responsibilities">Responsibilities:</span><br>
+                    <span data-i18n="experience.job4.r1">- I provided comprehensive support for services and applications
                     at this company. The company developed various applications,
                     such as: applications for integrating messengers into CRM or
                     ERP systems; applications for automating receipt processing.
-                    The company also had various bots with extensive functionality.<br>
-                    - I configured workflows and various CRM systems to ensure the correct operation of the applications.<br>
-                    - I used API documentation to configure integrations based on individual requests from business clients.
-During my time at the company, I was promoted to Senior Technical Specialist.<br>
+                    The company also had various bots with extensive functionality.</span><br>
+                    <span data-i18n="experience.job4.r2">- I configured workflows and various CRM systems to ensure the correct operation of the applications.</span><br>
+                    <span data-i18n="experience.job4.r3">- I used API documentation to configure integrations based on individual requests from business clients.
+During my time at the company, I was promoted to Senior Technical Specialist.</span><br>
             </p>
         </section>
         <section id="Courses">
-            <h2 class="pink"> Sertificates </h2>
+            <h2 class="pink" data-i18n="certificates.heading"> Sertificates </h2>
             <div class="courses_links">
                 <a href="  https://app.rs.school/certificate/hyibplm8" target="_blank">RSS pre-school</a> 
                 <a href="  https://app.rs.school/certificate/ji451kjc" target="_blank">RSS English school</a> 
                 <a href="https://www.freecodecamp.org/certification/fcc84a143f0-dca8-4321-9613-83dcc3ee7d09/javascript-algorithms-and-data-structures" target="_blank">FCC Legacy JavaScript</a> 
                 <a href="https://www.freecodecamp.org/certification/fcc84a143f0-dca8-4321-9613-83dcc3ee7d09/javascript-algorithms-and-data-structures-v8" target="_blank">FCC JavaScript</a> 
                 <a href="https://www.freecodecamp.org/certification/fcc84a143f0-dca8-4321-9613-83dcc3ee7d09/front-end-development-libraries" target="_blank">FCC Frontend Libraries</a> 
-                <a href="https://cert.efset.org/KQ9p3P">English language certificate</a> 
+                <a href="https://cert.efset.org/KQ9p3P" data-i18n="certificates.english">English language certificate</a> 
             </div>
 
          </section>
@@ -267,8 +269,8 @@ async function getData() {
 getData();</code></pre>
 </section> -->
         <section>
-         <h2 class="pink"> About me </h2>
-            <div class="about">
+         <h2 class="pink" data-i18n="about.heading"> About me </h2>
+            <div class="about" data-i18n="about.text">
                  I'm open to challenges and capable of independently navigating new services and applications. I'm able to analyze errors and find optimal solutions to improve work processes.
             </div>
         </section>

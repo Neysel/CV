@@ -39,7 +39,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin-right: 50px;
+    margin-right: 65px;
    
   }
  .nav-link {
@@ -69,8 +69,17 @@ html {
 
 
 
-.changeTheme {
+.headerControls {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  right: 7vw;
+  top: 20px;
+  z-index: 1000;
+}
+
+.changeTheme {
   height: 40px;
   width: 40px;
   background-color: transparent;
@@ -79,9 +88,28 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  right: 7vw;
-  top: 20px;
-  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.changeLang {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 8px;
+  border: 2px solid var(--text);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.changeLang:hover {
+  color: var(--blue);
+  border-color: var(--blue);
 }
 
   
